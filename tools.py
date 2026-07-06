@@ -9,6 +9,8 @@ from rich import print
 
 tavily = TavilyClient(api_key = os.getenv("TAVILY_API_KEY"))
 
+
+# this is a function to define tool
 @tool
 def web_search(query : str) -> str:
     """Search the web for recent and reliable information on a topic. Return Titles, URLs and snippets."""
